@@ -1,0 +1,9 @@
+# Environments
+venv/
+
+# IDE
+.idea/
+
+# python
+.pytest_cache/
+__pycache__/
