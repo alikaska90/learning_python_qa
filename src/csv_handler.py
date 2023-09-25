@@ -10,9 +10,11 @@ class CSVHandler:
 
     def read_file(self):
         opened_file = self.open_file("r")
-        file_data = [row for row in DictReader(opened_file)]
-        self.close_file(opened_file)
-        return file_data
+        try:
+            file_data = [row for row in DictReader(opened_file)]
+            return file_data
+        finally:
+            self.close_file(opened_file)
 
     def close_file(self, opened_file):
         opened_file.close()

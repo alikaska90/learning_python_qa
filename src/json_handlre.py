@@ -10,14 +10,18 @@ class JSONHandler:
 
     def read_file(self):
         opened_file = self.open_file("r")
-        file_data = json.load(opened_file)
-        self.close_file(opened_file)
-        return file_data
+        try:
+            file_data = json.load(opened_file)
+            return file_data
+        finally:
+            self.close_file(opened_file)
 
     def write_file(self, data):
         opened_file = self.open_file("w")
-        opened_file.write(json.dumps(data, indent=4))
-        self.close_file(opened_file)
+        try:
+            opened_file.write(json.dumps(data, indent=4))
+        finally:
+            self.close_file(opened_file)
 
     def close_file(self, opened_file):
         opened_file.close()

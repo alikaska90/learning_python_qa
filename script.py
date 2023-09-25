@@ -5,6 +5,10 @@ from src.json_handlre import JSONHandler
 book_list = CSVHandler(BOOKS_CSV).read_file()
 user_list = JSONHandler(USERS_JSON).read_file()
 
+# Update Pages value to int for result.json
+for book in book_list:
+    book["Pages"] = int(book["Pages"])
+
 num_books = len(book_list)
 num_users = len(user_list)
 
