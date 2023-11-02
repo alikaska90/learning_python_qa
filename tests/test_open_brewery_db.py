@@ -60,7 +60,7 @@ def test_breweries_by_city(api, params_dict):
                               'max num of random breweries',
                               'more then max num of random breweries'])
 def test_random_breweries(api, params_dict):
-    random_breweries = api.get(url=f'/random', params=params_dict)
+    random_breweries = api.get(url='/random', params=params_dict)
     assert random_breweries.status_code == 200
     body = api.get_body(random_breweries)
     assert json_validation(body, JSON_SCHEMA)
