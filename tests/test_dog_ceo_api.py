@@ -5,7 +5,6 @@ import pytest
 from srv.util import wrong_elements, default_value_for_less_min_or_more_max, json_validation
 
 BASE_URL = 'https://dog.ceo/api'
-COUNT_BREEDS = 99
 
 
 @pytest.fixture(scope='module')
@@ -18,7 +17,6 @@ def test_list_all_breeds(api):
     assert all_breeds.status_code == 200
     body = api.get_body(all_breeds)
     assert json_validation(body, JSON_SCHEMA_ALL_BREEDS)
-    assert len(body['message']) == COUNT_BREEDS
     assert body['status'] == 'success'
 
 

@@ -9,9 +9,7 @@ def is_substring(string, substring, lower):
     if lower:
         string = string.lower()
         substring = substring.lower()
-    if substring in string:
-        return True
-    return False
+    return substring in string
 
 
 def default_value_for_less_min_or_more_max(min_value, max_value, curr_value):
