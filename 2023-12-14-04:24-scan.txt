@@ -1,0 +1,19 @@
+Отчет о состоянии системы:
+Пользователи системы: root, systemd+, avahi, message+, lp, cups-br+, kernoops, syslog, alika, rtkit, colord
+Процессов запущено: 207
+Пользовательских процессов:
+root: 84
+systemd+: 3
+avahi: 2
+message+: 1
+lp: 2
+cups-br+: 1
+kernoops: 2
+syslog: 1
+alika: 109
+rtkit: 1
+colord: 1
+Всего памяти используется: 6.5 mb
+Всего CPU используется: 46.1%
+Больше всего памяти используется: /usr/libexec/goa-ide
+Больше всего CPU используется: /usr/bin/gnome-shell
