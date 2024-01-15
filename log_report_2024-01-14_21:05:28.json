@@ -1,0 +1,50 @@
+{
+    "num_of_req": 3216723,
+    "num_of_req_by_req_type": {
+        "GET": 2247848,
+        "HEAD": 49971,
+        "POST": 918794,
+        "PUT": 70,
+        "DELETE": 1,
+        "CONNECT": 0,
+        "OPTIONS": 39,
+        "TRACE": 0
+    },
+    "top_3_ips": [
+        {
+            "ip": "193.106.31.130",
+            "count": 235209
+        },
+        {
+            "ip": "198.50.156.189",
+            "count": 167812
+        },
+        {
+            "ip": "5.112.235.245",
+            "count": 166722
+        }
+    ],
+    "top_3_long_req": [
+        {
+            "req_type": "POST",
+            "url": "/administrator/index.php",
+            "ip": "62.93.172.245",
+            "exec_time": 10000,
+            "date": "23/Dec/2015 07:27:57"
+        },
+        {
+            "req_type": "GET",
+            "url": "/media/system/css/modal.css",
+            "ip": "213.162.68.113",
+            "exec_time": 10000,
+            "date": "06/Jan/2016 18:47:57"
+        },
+        {
+            "req_type": "GET",
+            "url": "/images/phocagallery/almhuette/thumbs/phoca_thumb_m_terasse.jpg",
+            "ip": "194.166.55.43",
+            "exec_time": 10000,
+            "date": "06/Jan/2016 21:29:02"
+        }
+    ]
+}
